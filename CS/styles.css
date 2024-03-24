@@ -1,0 +1,152 @@
+﻿/*
+	==============================================================
+	   CSS root variables
+	==============================================================
+*/
+:root {
+    --body-bkg-col: #dbde80;
+    --canvas-bkg-col: #ffffff;
+    --header-bkg-col: #ffd800;
+    --link-col: #e61616;
+    --hover-col: #eba958;
+    --set-col: #f59c30;
+    --sqr-col: #ff6a00;
+    --factor-col: #2f521f;
+}
+
+body {
+    margin: 0px;
+    background-color: var(--body-bkg-col);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: var(--link-col);
+}
+
+h1, h2, h3, h4 {
+    font-family: 'Comic Sans MS';
+}
+
+.center {
+    text-align: center;
+}
+
+.table-container {
+    width: 640px;
+    margin-left: auto;
+    margin-right:auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.table-row {
+    box-sizing: border-box;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.table-cell {
+    box-sizing: border-box;
+    min-width: 50px;
+    width: 50px;
+    height: 50px;
+    margin: 2px;
+    text-align: center;
+    font-size: 22px;
+    font-weight: bold;
+    padding-top: 10px;
+    background-color: white;
+    border: 1px solid black;
+}
+.table-cell:hover {
+    cursor:pointer;
+    background-color: var(--hover-col);
+}
+
+.highlight {
+    background-color: var(--hover-col) !important;
+}
+
+.set-block {
+    background-color: var(--set-col) !important;
+}
+
+/* Colour of square numbers */
+.sqr {
+    background-color: var(--sqr-col);
+}
+
+.correct {
+    color: green;
+}
+
+.incorrect {
+    color: red;
+}
+
+.tick:before {
+    font-size: 25px;
+    font-weight: 900;
+    color: green;
+    content: "\2713";
+}
+
+.cross:before {
+    font-size: 20px;
+    font-weight: 900;
+    color: red;
+    content: "\2716";
+}
+
+/* Column or row heading */
+.factor {
+    color: white;
+    background-color: var(--factor-col);
+}
+
+.my-header {
+    width: 100%;
+    background-color: var(--header-bkg-col);
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.my-container {
+    padding:0px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 70%;
+}
+
+.my-canvas-container {
+    width: 600px;
+    height: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: var(--canvas-bkg-col);
+}
+
+.my-table {
+    width:50%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.my-footer {
+
+}
+
+@media only screen and (max-width: 600px) {
+    .my-container {
+        width: 100%;
+        padding-left: 5px;
+        padding-right: 5px;
+        box-sizing:border-box;
+    }
+}
+
+
