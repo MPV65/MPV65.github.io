@@ -22,6 +22,11 @@ let rVal = 1;
 let lVal = 2;
 
 /**
+ * Number of correctly answered questions.
+ */
+let numCorrect = 0;
+
+/**
  * Sets the highlighting of a block on mouse over.
  * @param {number} row Row number of table
  * @param {number} col Column number of table
@@ -184,6 +189,8 @@ function writeEquation(row, col) {
             if (num === lVal * rVal) {
 
                 valStr = valStr + val + "<span class=\"correct\">&nbsp;&nbsp;&#x2713;</span>";
+
+                checkNumCorrect();
                 
             }
             else {
@@ -200,6 +207,40 @@ function writeEquation(row, col) {
     catch (err) {
 
         console.error(err.message + " in writeEquation(row, col)");
+    }
+}
+
+
+/**
+ * Checks number of correct cells.
+ */
+function checkNumCorrect() {
+
+    try {
+
+        numCorrect = 0;
+
+        for (let row = 1; row < 12; row++) {
+            for (let col = 1; col < 12; col++) {
+
+                const cell = mulTable[row][col];
+                const val = cell.innerHTML;
+
+                if (val.length === 0) continue;
+
+                const num = parseInt(val);
+
+                if ((row + 1) * (col + 1) === num) numCorrect++;
+
+            }
+        }
+
+        document.getElementById("correct-id").innerHTML = "Correct: " + numCorrect.toString();
+
+    }
+    catch (err) {
+
+        console.error(err.message + " in checkNumCorrect()");
     }
 }
 
