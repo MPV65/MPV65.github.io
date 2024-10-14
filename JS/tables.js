@@ -188,15 +188,15 @@ function writeEquation(row, col) {
 
             if (num === lVal * rVal) {
 
-                valStr = valStr + val + "<span class=\"correct\">&nbsp;&nbsp;&#x2713;</span>";
-
-                checkNumCorrect();
+                valStr = valStr + val + "<span class=\"correct\">&nbsp;&nbsp;&#x2713;</span>";  
                 
             }
             else {
 
                 valStr = valStr + "<span class=\"incorrect\">" + val + "&nbsp;&nbsp;&#x2716;</span>";
             }
+
+            checkNumCorrect();
         }
 
         // Change equation
