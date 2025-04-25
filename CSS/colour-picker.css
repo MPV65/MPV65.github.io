@@ -1,6 +1,6 @@
 ﻿body {
     font-family: Arial;
-    font-size: 20px;
+    font-size: 16px;
     margin: 0px;
 }
 
@@ -27,14 +27,13 @@ h1 {
     display:block;
     width:50%;
     margin:auto;
-    font-size: 22px;
+    font-size: 20px;
 }
 
 .hex-box-label {
     display: block;
     width: 50%;
     margin: auto;
-    font-size: 22px;
     margin-bottom:5px;
 }
 
@@ -43,6 +42,7 @@ h1 {
     margin: auto;
     padding: 50px;
     padding-top:10px;
+    box-sizing:border-box;
 }
 
 #colour-box {
