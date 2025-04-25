@@ -4,20 +4,22 @@
 <head>
     <meta charset="utf-8" />
     <title>Colour Picker</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="CSS/colour-picker.css" />
 </head>
 <body>
 
-    <h1>Colour picker</h1>
+    <div class="colour-picker">
 
-    <p class="center-text">
-        Change the colour of the box by adjusting the red/blue/green sliders or editing the hex code directly.
-    </p>
+        <h1>Colour picker</h1>
 
-    <div id="colour-picker" class="center">
+        <p class="center-text">
+            Change the colour of the box by adjusting the red/blue/green sliders or editing the hex code directly.
+        </p>
 
         <div id="colour-box">
         </div>
+
         <div class="slider-container">
             <label for="red-slider">Red</label>
             <input class="slider" id="red-slider" type="range" min="0" max="255" value="255">
@@ -31,8 +33,10 @@
             <input class="slider" id="blue-slider" type="range" min="0" max="255" value="0">
         </div>
         <div class="slider-container">
+            <label class="hex-box-label" for="hex-box-id">Hex code:</label>
             <input class="hex-box" id="hex-box-id" type="text" value="#ff0000">
         </div>
+
     </div>
     
     <script type="text/javascript" src="JS/colour-picker.js"></script>

@@ -1,13 +1,12 @@
 ﻿body {
     font-family: Arial;
+    font-size: 20px;
+    margin: 0px;
 }
+
 h1 {
+    width:100%;
     text-align: center;
-}
-
-.center {
-
-    margin:auto;
 }
 
 .center-text {
@@ -28,20 +27,38 @@ h1 {
     display:block;
     width:50%;
     margin:auto;
+    font-size: 22px;
 }
 
-#colour-picker {
+.hex-box-label {
+    display: block;
+    width: 50%;
+    margin: auto;
+    font-size: 22px;
+    margin-bottom:5px;
+}
+
+.colour-picker {
     width: 500px;
-    height: 500px;
-    padding:50px;
-    box-sizing:border-box;
-    background-color: #FFFFFF;
+    margin: auto;
+    padding: 50px;
+    padding-top:10px;
 }
 
 #colour-box {
-    width: 300px;
-    height: 300px;
+    width: 80%;
+    aspect-ratio: 1/1;
     background-color: #ff0000;
     margin: auto;
-    margin-bottom:20px;
+    margin-bottom: 20px;
+    margin-top: 30px;
+}
+
+@media only screen and (max-width: 600px) {
+    body {
+        width:100%;
+    }
+    .colour-picker {
+        width: 100%;
+    }
 }
