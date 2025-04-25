@@ -1,0 +1,47 @@
+﻿body {
+    font-family: Arial;
+}
+h1 {
+    text-align: center;
+}
+
+.center {
+
+    margin:auto;
+}
+
+.center-text {
+    text-align: center;
+}
+
+.slider-container {
+    width: 100%;
+    padding:10px;
+}
+
+.slider {
+    width: 100%;
+    margin: auto;
+}
+
+.hex-box {
+    display:block;
+    width:50%;
+    margin:auto;
+}
+
+#colour-picker {
+    width: 500px;
+    height: 500px;
+    padding:50px;
+    box-sizing:border-box;
+    background-color: #FFFFFF;
+}
+
+#colour-box {
+    width: 300px;
+    height: 300px;
+    background-color: #ff0000;
+    margin: auto;
+    margin-bottom:20px;
+}
