@@ -2,11 +2,17 @@
     font-family: Arial;
     font-size: 16px;
     margin: 0px;
+    color: #EFEFEF;
+    background-color: #000000;
 }
 
 h1 {
     width:100%;
     text-align: center;
+}
+
+input[type='range'] {
+    accent-color: green;
 }
 
 .center-text {
