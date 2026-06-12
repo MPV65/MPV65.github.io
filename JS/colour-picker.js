@@ -6062,6 +6062,10 @@ function editColour() {
             document.getElementById("green-slider").value = green;
             document.getElementById("blue-slider").value = blue;
 
+            var name = getColourName(red, green, blue);
+
+            document.getElementById("colour-name-id").innerHTML = name;
+
         }
 
     }
